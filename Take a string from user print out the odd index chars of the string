@@ -1,0 +1,16 @@
+//Take a string from the user and print out the odd indexes characters of the string
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Give me a string");
+		String s = scanner.nextLine();
+		for(int i=0;i<s.length();i++){
+		    if(i%2==1){
+		        System.out.print(s.charAt(i));
+		    }
+	    }
+}
+} 
