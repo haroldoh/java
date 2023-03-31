@@ -1,0 +1,17 @@
+//Ask the user for a sentence and print half of the sentence
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scanner = new Scanner(System.in);
+		System.out.println("Give me a sentence");
+		String s = scanner.nextLine();
+		for(int i=0; i<s.length()/2; i++){
+		    System.out.print(s.charAt(i));
+		     } 
+		     if(s.length()%2==1){
+		        System.out.print(s.charAt(s.length()/2));
+		}
+	}
+}
