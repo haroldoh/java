@@ -1,0 +1,14 @@
+//Swap the value of Park and Kim
+
+public class Main
+{
+	public static void main(String[] args) {
+		String[] names = {"Song" , "Park" , "Kim"};
+		String temporary = names[1];
+		names[1] = names[2];
+		names[2] = temporary;
+		for(String i:names){
+		    System.out.println(i);
+		}
+	}
+}
