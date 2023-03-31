@@ -1,0 +1,48 @@
+//Write a program that reads a set of integers, and then prints the sum of the even and odd integers.
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Give me 5 numbers");
+		int numOne = scanner.nextInt();
+	    int numTwo = scanner.nextInt();
+	    int numThree = scanner.nextInt();
+	    int numFour = scanner.nextInt();
+	    int numFive = scanner.nextInt();
+	    int evenSum = 0;
+	    int oddSum = 0;
+	    if(numOne%2==0){
+	        evenSum = evenSum + numOne;
+	    }else{
+	        oddSum = oddSum + numOne;
+	    }
+	    
+	    if(numTwo%2==0){
+	        evenSum = evenSum + numTwo;
+	    }else{
+	        oddSum = oddSum + numTwo;
+	       
+	    }
+	    
+	    if(numThree%2==0){
+	        evenSum = evenSum + numThree;
+	    }else{
+	        oddSum = oddSum + numThree;
+	    }
+	    
+	    if(numFour%2==0){
+	        evenSum = evenSum + numFour;
+	    }else{
+	        oddSum = oddSum + numFour;
+	    }
+	    
+	    if(numFive%2==0){
+	        evenSum = evenSum + numFive;
+	    }else{
+	        oddSum = oddSum + numFive;
+	    }
+	    System.out.println("This is the evenSum " + evenSum + " This is the oddSum " + oddSum);
+	}
+}
