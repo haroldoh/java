@@ -1,0 +1,28 @@
+// Assume a month has day 1 to day 31. And day 1 is Monday. Take a number from the user(1 to 31) and print which day it is
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
+	System.out.println("Give me a number from 1 to 31");
+	int day = scanner.nextInt();
+	int remainder = day%7;
+	if(remainder==1){
+	    System.out.println("Your day is Monday");
+	}else if(remainder==2){
+	    System.out.println("your day is Tuesday");
+	}else if(remainder==3){
+	    System.out.println("your day is wednesday");
+	}else if(remainder==4){
+	    System.out.println("Your day is thursday");
+	}else if(remainder==5){
+	    System.out.println("Your day is friday");
+	}else if(remainder==6){
+	    System.out.println("Your day is Saturday");
+	}else if(remainder==0){
+	    System.out.println("Your day is sunday");
+	}
+    }
+}
+
