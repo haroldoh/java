@@ -1,0 +1,25 @@
+//Make the above print: bd for odd indexes and print: ace for even indexes
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Give me a string");
+		String s = scanner.nextLine();
+		String odd = "This is Odd";
+		String even = "This is Even";
+		for(int i=0;i<s.length();i++){
+		    if(i%2==1){
+		       odd = odd + " "+ s.charAt(i);
+		    }
+	    }
+	    System.out.println(odd);
+	    for(int j=0;j<s.length();j++){
+	         if(j%2==0){
+		        even = even + " "+ s.charAt(j);
+            }
+	    }
+            System.out.println(even);
+        }
+    }
