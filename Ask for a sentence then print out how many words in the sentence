@@ -1,0 +1,18 @@
+//Build a program that asks for a sentence and print out how many words in the sentence
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Give me a sentence");
+		String s = scanner.nextLine(); 
+		int count =0;
+	    for(int i=0;i<s.length();i++){
+	        if(s.charAt(i) ==' '){
+	            count++;
+	        }
+	    }
+	    System.out.println(count+1);
+	}
+}
