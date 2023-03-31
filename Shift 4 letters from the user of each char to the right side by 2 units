@@ -1,0 +1,16 @@
+//Get an input of a String that contains 4 letters from the user and shift the location of each character to the right side by 2 units(ABCD -> CDAB)
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Give me 4 letters");
+		String s = scanner.nextLine();
+		for(int i=2;i<s.length();i++){
+		    System.out.print(s.charAt(i));
+		}
+	    System.out.print(s.charAt(0));
+	    System.out.print(s.charAt(1));
+	}
+}
