@@ -1,0 +1,27 @@
+//Take the input from the user and multiply each digit DIGIT AMOUNT OF TIMES. and add them all together. 
+
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Give me any Number");
+		int num = scanner.nextInt();
+		if(num<0){
+		    System.out.println("Negative number not valid");
+		}else{
+		int product = 0;
+		while(num>0){
+		    int digit = num%10;
+		    int calculate = 1;
+		    for(int i= 0; i<digit; i++){
+		        calculate = calculate * digit;
+		    }
+		    product = calculate + product;
+		    num = num/10;
+		}
+		System.out.println("New number " + product);
+		}
+	}
+}
